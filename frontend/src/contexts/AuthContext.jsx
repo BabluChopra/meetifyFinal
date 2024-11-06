@@ -8,6 +8,7 @@ import server from "../environment";
 export const AuthContext = createContext({});
 
 const client = axios.create({
+    // baseURL: "http://localhost:8000/api/vi/user"
     baseURL: `${server}/api/v1/users`
 })
 
